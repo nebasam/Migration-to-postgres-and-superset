@@ -33,6 +33,13 @@ def create_mysql_connection():
     engine = create_engine(connection)
     return engine
 
+def get_table_names():
+   engine = create_mysql_connection()
+   conn = engine.connect()
+   query = text(f'show tables')
+   result = conn.execute(query)
+   return ['Station_Summary', 'I80Stations']
+   
 def get_record(table_name):
    engine = create_mysql_connection()
    conn = engine.connect()
