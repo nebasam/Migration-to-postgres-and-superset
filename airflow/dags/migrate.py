@@ -32,3 +32,10 @@ def create_mysql_connection():
     connection = f'mysql+pymysql://{mysql_user}:{mysql_password}@{mysql_host}:{mysql_port}/{mysql_db_name}'
     engine = create_engine(connection)
     return engine
+
+def get_record(table_name):
+   engine = create_mysql_connection()
+   conn = engine.connect()
+   query = text(f'SELECT COUNT(*) FROM {table_name}')
+   result = conn.execute(query)
+   return result.fetchone()[0]
