@@ -1,0 +1,990 @@
+[2021-09-27 05:33:50,564] {processor.py:162} INFO - Started process (PID=14015) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:33:50,565] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:33:50,566] {logging_mixin.py:109} INFO - [2021-09-27 05:33:50,566] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:33:50,610] {logging_mixin.py:109} INFO - [2021-09-27 05:33:50,574] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:33:50,610] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:33:50,759] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.197 seconds
+[2021-09-27 05:34:21,454] {processor.py:162} INFO - Started process (PID=14081) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:34:21,455] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:34:21,456] {logging_mixin.py:109} INFO - [2021-09-27 05:34:21,456] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:34:21,533] {logging_mixin.py:109} INFO - [2021-09-27 05:34:21,467] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:34:21,534] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:34:21,606] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.156 seconds
+[2021-09-27 05:34:51,826] {processor.py:162} INFO - Started process (PID=14137) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:34:51,852] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:34:51,855] {logging_mixin.py:109} INFO - [2021-09-27 05:34:51,855] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:34:51,891] {logging_mixin.py:109} INFO - [2021-09-27 05:34:51,888] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:34:51,892] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:34:51,953] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.138 seconds
+[2021-09-27 05:35:22,099] {processor.py:162} INFO - Started process (PID=14201) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:35:22,100] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:35:22,101] {logging_mixin.py:109} INFO - [2021-09-27 05:35:22,100] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:35:22,112] {logging_mixin.py:109} INFO - [2021-09-27 05:35:22,111] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:35:22,112] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:35:22,132] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.037 seconds
+[2021-09-27 05:35:52,291] {processor.py:162} INFO - Started process (PID=14256) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:35:52,344] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:35:52,344] {logging_mixin.py:109} INFO - [2021-09-27 05:35:52,344] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:35:52,353] {logging_mixin.py:109} INFO - [2021-09-27 05:35:52,353] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:35:52,390] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:35:52,424] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.136 seconds
+[2021-09-27 05:36:23,111] {processor.py:162} INFO - Started process (PID=14319) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:36:23,130] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:36:23,131] {logging_mixin.py:109} INFO - [2021-09-27 05:36:23,131] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:36:23,142] {logging_mixin.py:109} INFO - [2021-09-27 05:36:23,141] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:36:23,142] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:36:23,221] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.113 seconds
+[2021-09-27 05:36:53,451] {processor.py:162} INFO - Started process (PID=14373) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:36:53,452] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:36:53,453] {logging_mixin.py:109} INFO - [2021-09-27 05:36:53,453] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:36:53,461] {logging_mixin.py:109} INFO - [2021-09-27 05:36:53,461] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:36:53,462] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:36:53,484] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.036 seconds
+[2021-09-27 05:37:24,082] {processor.py:162} INFO - Started process (PID=14437) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:37:24,092] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:37:24,093] {logging_mixin.py:109} INFO - [2021-09-27 05:37:24,093] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:37:24,101] {logging_mixin.py:109} INFO - [2021-09-27 05:37:24,100] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:37:24,101] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:37:24,119] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.039 seconds
+[2021-09-27 05:37:54,189] {processor.py:162} INFO - Started process (PID=14489) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:37:54,190] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:37:54,191] {logging_mixin.py:109} INFO - [2021-09-27 05:37:54,191] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:37:54,205] {logging_mixin.py:109} INFO - [2021-09-27 05:37:54,204] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:37:54,205] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:37:54,243] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.057 seconds
+[2021-09-27 05:38:24,562] {processor.py:162} INFO - Started process (PID=14554) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:38:24,584] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:38:24,585] {logging_mixin.py:109} INFO - [2021-09-27 05:38:24,585] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:38:24,597] {logging_mixin.py:109} INFO - [2021-09-27 05:38:24,597] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:38:24,598] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:38:24,634] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.076 seconds
+[2021-09-27 05:38:55,103] {processor.py:162} INFO - Started process (PID=14610) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:38:55,104] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:38:55,105] {logging_mixin.py:109} INFO - [2021-09-27 05:38:55,105] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:38:55,115] {logging_mixin.py:109} INFO - [2021-09-27 05:38:55,115] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:38:55,116] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:38:55,146] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.046 seconds
+[2021-09-27 05:39:25,320] {processor.py:162} INFO - Started process (PID=14663) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:39:25,333] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:39:25,335] {logging_mixin.py:109} INFO - [2021-09-27 05:39:25,335] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:39:25,358] {logging_mixin.py:109} INFO - [2021-09-27 05:39:25,357] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:39:25,358] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:39:25,383] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.071 seconds
+[2021-09-27 05:39:55,823] {processor.py:162} INFO - Started process (PID=14730) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:39:55,824] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:39:55,825] {logging_mixin.py:109} INFO - [2021-09-27 05:39:55,825] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:39:55,835] {logging_mixin.py:109} INFO - [2021-09-27 05:39:55,834] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:39:55,835] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:39:55,862] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.042 seconds
+[2021-09-27 05:40:26,310] {processor.py:162} INFO - Started process (PID=14784) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:40:26,364] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:40:26,364] {logging_mixin.py:109} INFO - [2021-09-27 05:40:26,364] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:40:26,385] {logging_mixin.py:109} INFO - [2021-09-27 05:40:26,385] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:40:26,388] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:40:26,442] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.135 seconds
+[2021-09-27 05:40:57,103] {processor.py:162} INFO - Started process (PID=14848) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:40:57,105] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:40:57,106] {logging_mixin.py:109} INFO - [2021-09-27 05:40:57,105] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:40:57,115] {logging_mixin.py:109} INFO - [2021-09-27 05:40:57,114] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:40:57,115] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:40:57,154] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.055 seconds
+[2021-09-27 05:41:27,373] {processor.py:162} INFO - Started process (PID=14908) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:41:27,386] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:41:27,386] {logging_mixin.py:109} INFO - [2021-09-27 05:41:27,386] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:41:27,395] {logging_mixin.py:109} INFO - [2021-09-27 05:41:27,394] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:41:27,395] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:41:27,422] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.051 seconds
+[2021-09-27 05:41:57,538] {processor.py:162} INFO - Started process (PID=14963) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:41:57,551] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:41:57,552] {logging_mixin.py:109} INFO - [2021-09-27 05:41:57,552] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:41:57,560] {logging_mixin.py:109} INFO - [2021-09-27 05:41:57,560] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:41:57,561] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:41:57,592] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.057 seconds
+[2021-09-27 05:42:27,728] {processor.py:162} INFO - Started process (PID=15016) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:42:27,729] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:42:27,730] {logging_mixin.py:109} INFO - [2021-09-27 05:42:27,730] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:42:27,743] {logging_mixin.py:109} INFO - [2021-09-27 05:42:27,742] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:42:27,743] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:42:27,782] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.056 seconds
+[2021-09-27 05:42:58,546] {processor.py:162} INFO - Started process (PID=15087) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:42:58,566] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:42:58,568] {logging_mixin.py:109} INFO - [2021-09-27 05:42:58,568] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:42:58,593] {logging_mixin.py:109} INFO - [2021-09-27 05:42:58,592] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:42:58,593] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:42:58,628] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.087 seconds
+[2021-09-27 05:43:28,989] {processor.py:162} INFO - Started process (PID=15141) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:43:28,992] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:43:28,994] {logging_mixin.py:109} INFO - [2021-09-27 05:43:28,994] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:43:29,010] {logging_mixin.py:109} INFO - [2021-09-27 05:43:29,009] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:43:29,010] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:43:29,051] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.070 seconds
+[2021-09-27 05:43:59,132] {processor.py:162} INFO - Started process (PID=15206) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:43:59,145] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:43:59,146] {logging_mixin.py:109} INFO - [2021-09-27 05:43:59,145] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:43:59,157] {logging_mixin.py:109} INFO - [2021-09-27 05:43:59,156] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:43:59,157] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:43:59,186] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.056 seconds
+[2021-09-27 05:44:29,603] {processor.py:162} INFO - Started process (PID=15259) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:44:29,606] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:44:29,609] {logging_mixin.py:109} INFO - [2021-09-27 05:44:29,608] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:44:29,629] {logging_mixin.py:109} INFO - [2021-09-27 05:44:29,628] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:44:29,629] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:44:29,654] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.060 seconds
+[2021-09-27 05:45:00,412] {processor.py:162} INFO - Started process (PID=15323) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:45:00,417] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:45:00,418] {logging_mixin.py:109} INFO - [2021-09-27 05:45:00,418] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:45:00,430] {logging_mixin.py:109} INFO - [2021-09-27 05:45:00,429] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:45:00,430] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:45:00,455] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.046 seconds
+[2021-09-27 05:45:30,986] {processor.py:162} INFO - Started process (PID=15376) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:45:30,989] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:45:30,992] {logging_mixin.py:109} INFO - [2021-09-27 05:45:30,991] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:45:31,011] {logging_mixin.py:109} INFO - [2021-09-27 05:45:31,010] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:45:31,012] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:45:31,045] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.067 seconds
+[2021-09-27 05:46:01,342] {processor.py:162} INFO - Started process (PID=15441) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:46:01,365] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:46:01,366] {logging_mixin.py:109} INFO - [2021-09-27 05:46:01,366] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:46:01,388] {logging_mixin.py:109} INFO - [2021-09-27 05:46:01,387] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:46:01,388] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:46:01,424] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.090 seconds
+[2021-09-27 05:46:31,502] {processor.py:162} INFO - Started process (PID=15496) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:46:31,505] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:46:31,507] {logging_mixin.py:109} INFO - [2021-09-27 05:46:31,507] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:46:31,535] {logging_mixin.py:109} INFO - [2021-09-27 05:46:31,533] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:46:31,536] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:46:31,625] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.132 seconds
+[2021-09-27 05:47:01,823] {processor.py:162} INFO - Started process (PID=15563) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:47:01,831] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:47:01,832] {logging_mixin.py:109} INFO - [2021-09-27 05:47:01,832] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:47:01,842] {logging_mixin.py:109} INFO - [2021-09-27 05:47:01,842] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:47:01,842] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:47:01,872] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.052 seconds
+[2021-09-27 05:47:32,309] {processor.py:162} INFO - Started process (PID=15619) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:47:32,311] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:47:32,312] {logging_mixin.py:109} INFO - [2021-09-27 05:47:32,312] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:47:32,331] {logging_mixin.py:109} INFO - [2021-09-27 05:47:32,330] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:47:32,331] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:47:32,373] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.069 seconds
+[2021-09-27 05:48:03,289] {processor.py:162} INFO - Started process (PID=15684) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:48:03,298] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:48:03,298] {logging_mixin.py:109} INFO - [2021-09-27 05:48:03,298] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:48:03,307] {logging_mixin.py:109} INFO - [2021-09-27 05:48:03,307] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:48:03,307] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:48:03,329] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.043 seconds
+[2021-09-27 05:48:33,863] {processor.py:162} INFO - Started process (PID=15738) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:48:33,864] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:48:33,864] {logging_mixin.py:109} INFO - [2021-09-27 05:48:33,864] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:48:33,872] {logging_mixin.py:109} INFO - [2021-09-27 05:48:33,872] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:48:33,872] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:48:33,897] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.037 seconds
+[2021-09-27 05:49:04,414] {processor.py:162} INFO - Started process (PID=15802) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:49:04,430] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:49:04,430] {logging_mixin.py:109} INFO - [2021-09-27 05:49:04,430] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:49:04,439] {logging_mixin.py:109} INFO - [2021-09-27 05:49:04,438] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:49:04,439] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:49:04,466] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.055 seconds
+[2021-09-27 05:49:34,697] {processor.py:162} INFO - Started process (PID=15858) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:49:34,698] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:49:34,699] {logging_mixin.py:109} INFO - [2021-09-27 05:49:34,699] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:49:34,707] {logging_mixin.py:109} INFO - [2021-09-27 05:49:34,706] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:49:34,707] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:49:34,733] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.038 seconds
+[2021-09-27 05:50:05,380] {processor.py:162} INFO - Started process (PID=15924) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:50:05,387] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:50:05,387] {logging_mixin.py:109} INFO - [2021-09-27 05:50:05,387] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:50:05,396] {logging_mixin.py:109} INFO - [2021-09-27 05:50:05,395] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:50:05,396] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:50:05,422] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.045 seconds
+[2021-09-27 05:50:35,481] {processor.py:162} INFO - Started process (PID=15978) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:50:35,482] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:50:35,483] {logging_mixin.py:109} INFO - [2021-09-27 05:50:35,483] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:50:35,493] {logging_mixin.py:109} INFO - [2021-09-27 05:50:35,493] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:50:35,494] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:50:35,546] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.070 seconds
+[2021-09-27 05:51:06,119] {processor.py:162} INFO - Started process (PID=16035) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:51:06,133] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:51:06,134] {logging_mixin.py:109} INFO - [2021-09-27 05:51:06,134] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:51:06,144] {logging_mixin.py:109} INFO - [2021-09-27 05:51:06,143] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:51:06,144] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:51:06,202] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.086 seconds
+[2021-09-27 05:51:36,532] {processor.py:162} INFO - Started process (PID=16091) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:51:36,534] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:51:36,535] {logging_mixin.py:109} INFO - [2021-09-27 05:51:36,535] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:51:36,547] {logging_mixin.py:109} INFO - [2021-09-27 05:51:36,547] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:51:36,548] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:51:36,581] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.058 seconds
+[2021-09-27 05:52:06,711] {processor.py:162} INFO - Started process (PID=16155) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:52:06,723] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:52:06,724] {logging_mixin.py:109} INFO - [2021-09-27 05:52:06,723] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:52:06,732] {logging_mixin.py:109} INFO - [2021-09-27 05:52:06,732] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:52:06,732] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:52:06,841] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.133 seconds
+[2021-09-27 05:52:37,012] {processor.py:162} INFO - Started process (PID=16205) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:52:37,014] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:52:37,014] {logging_mixin.py:109} INFO - [2021-09-27 05:52:37,014] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:52:37,028] {logging_mixin.py:109} INFO - [2021-09-27 05:52:37,027] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:52:37,028] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:52:37,064] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.055 seconds
+[2021-09-27 05:53:07,245] {processor.py:162} INFO - Started process (PID=16261) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:53:07,269] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:53:07,270] {logging_mixin.py:109} INFO - [2021-09-27 05:53:07,270] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:53:07,281] {logging_mixin.py:109} INFO - [2021-09-27 05:53:07,281] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:53:07,282] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:53:07,320] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.079 seconds
+[2021-09-27 05:53:38,211] {processor.py:162} INFO - Started process (PID=16326) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:53:38,228] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:53:38,229] {logging_mixin.py:109} INFO - [2021-09-27 05:53:38,229] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:53:38,249] {logging_mixin.py:109} INFO - [2021-09-27 05:53:38,247] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:53:38,249] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:53:38,299] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.097 seconds
+[2021-09-27 05:54:08,371] {processor.py:162} INFO - Started process (PID=16379) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:54:08,375] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:54:08,377] {logging_mixin.py:109} INFO - [2021-09-27 05:54:08,377] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:54:08,392] {logging_mixin.py:109} INFO - [2021-09-27 05:54:08,392] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:54:08,392] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:54:08,450] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.088 seconds
+[2021-09-27 05:54:38,743] {processor.py:162} INFO - Started process (PID=16443) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:54:38,761] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:54:38,762] {logging_mixin.py:109} INFO - [2021-09-27 05:54:38,762] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:54:38,770] {logging_mixin.py:109} INFO - [2021-09-27 05:54:38,770] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:54:38,770] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:54:38,823] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.083 seconds
+[2021-09-27 05:55:08,926] {processor.py:162} INFO - Started process (PID=16499) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:55:08,940] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:55:08,941] {logging_mixin.py:109} INFO - [2021-09-27 05:55:08,941] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:55:08,955] {logging_mixin.py:109} INFO - [2021-09-27 05:55:08,953] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:55:08,955] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:55:08,979] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.059 seconds
+[2021-09-27 05:55:39,318] {processor.py:162} INFO - Started process (PID=16566) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:55:39,321] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:55:39,323] {logging_mixin.py:109} INFO - [2021-09-27 05:55:39,322] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:55:39,338] {logging_mixin.py:109} INFO - [2021-09-27 05:55:39,337] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:55:39,338] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:55:39,369] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.059 seconds
+[2021-09-27 05:56:09,679] {processor.py:162} INFO - Started process (PID=16622) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:56:09,694] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:56:09,695] {logging_mixin.py:109} INFO - [2021-09-27 05:56:09,695] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:56:09,723] {logging_mixin.py:109} INFO - [2021-09-27 05:56:09,722] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:56:09,724] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:56:09,792] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.122 seconds
+[2021-09-27 05:56:40,198] {processor.py:162} INFO - Started process (PID=16689) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:56:40,201] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:56:40,202] {logging_mixin.py:109} INFO - [2021-09-27 05:56:40,202] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:56:40,216] {logging_mixin.py:109} INFO - [2021-09-27 05:56:40,216] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:56:40,216] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:56:40,249] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.058 seconds
+[2021-09-27 05:57:10,518] {processor.py:162} INFO - Started process (PID=16743) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:57:10,548] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:57:10,550] {logging_mixin.py:109} INFO - [2021-09-27 05:57:10,550] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:57:10,572] {logging_mixin.py:109} INFO - [2021-09-27 05:57:10,571] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:57:10,647] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:57:10,729] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.229 seconds
+[2021-09-27 05:57:41,054] {processor.py:162} INFO - Started process (PID=16807) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:57:41,135] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:57:41,136] {logging_mixin.py:109} INFO - [2021-09-27 05:57:41,135] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:57:41,147] {logging_mixin.py:109} INFO - [2021-09-27 05:57:41,147] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:57:41,148] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:57:41,376] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.332 seconds
+[2021-09-27 05:58:11,452] {processor.py:162} INFO - Started process (PID=16861) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:58:11,506] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:58:11,508] {logging_mixin.py:109} INFO - [2021-09-27 05:58:11,508] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:58:11,536] {logging_mixin.py:109} INFO - [2021-09-27 05:58:11,534] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:58:11,536] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:58:11,565] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.115 seconds
+[2021-09-27 05:58:42,053] {processor.py:162} INFO - Started process (PID=16923) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:58:42,054] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:58:42,055] {logging_mixin.py:109} INFO - [2021-09-27 05:58:42,055] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:58:42,064] {logging_mixin.py:109} INFO - [2021-09-27 05:58:42,063] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:58:42,064] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:58:42,099] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.048 seconds
+[2021-09-27 05:59:12,365] {processor.py:162} INFO - Started process (PID=16977) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:59:12,383] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:59:12,386] {logging_mixin.py:109} INFO - [2021-09-27 05:59:12,385] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:59:12,404] {logging_mixin.py:109} INFO - [2021-09-27 05:59:12,403] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:59:12,404] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:59:12,444] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.088 seconds
+[2021-09-27 05:59:43,010] {processor.py:162} INFO - Started process (PID=17042) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:59:43,026] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 05:59:43,027] {logging_mixin.py:109} INFO - [2021-09-27 05:59:43,027] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:59:43,035] {logging_mixin.py:109} INFO - [2021-09-27 05:59:43,035] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 05:59:43,035] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 05:59:43,067] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.059 seconds
+[2021-09-27 06:00:13,655] {processor.py:162} INFO - Started process (PID=17096) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 06:00:13,662] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 06:00:13,663] {logging_mixin.py:109} INFO - [2021-09-27 06:00:13,663] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 06:00:13,671] {logging_mixin.py:109} INFO - [2021-09-27 06:00:13,670] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 06:00:13,671] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 06:00:13,701] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.049 seconds
+[2021-09-27 06:00:44,256] {processor.py:162} INFO - Started process (PID=17160) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 06:00:44,257] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 06:00:44,258] {logging_mixin.py:109} INFO - [2021-09-27 06:00:44,258] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 06:00:44,267] {logging_mixin.py:109} INFO - [2021-09-27 06:00:44,266] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 06:00:44,267] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 06:00:44,347] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 0.093 seconds
+[2021-09-27 06:01:19,064] {processor.py:162} INFO - Started process (PID=17211) to work on /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 06:01:19,618] {processor.py:613} INFO - Processing file /opt/airflow/dags/data_extraction_airflow.py for tasks to queue
+[2021-09-27 06:01:19,750] {logging_mixin.py:109} INFO - [2021-09-27 06:01:19,749] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 06:01:20,873] {logging_mixin.py:109} INFO - [2021-09-27 06:01:20,519] {dagbag.py:410} ERROR - Failed to bag_dag: /opt/airflow/dags/data_extraction_airflow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 398, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 422, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 430, in _bag_dag
+    test_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 56, in test_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/dag_cycle_tester.py", line 42, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: dbt_run
+[2021-09-27 06:01:20,873] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/data_extraction_airflow.py
+[2021-09-27 06:01:21,667] {processor.py:170} INFO - Processing /opt/airflow/dags/data_extraction_airflow.py took 2.606 seconds

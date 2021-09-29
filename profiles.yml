@@ -1,0 +1,12 @@
+# example profiles.yml file
+defaults:
+  outputs:
+    dev:
+      type: mysql
+      server: localhost
+      port: 3306
+      schema: analytics
+      username: 'root'
+      password: 'root'
+
+  target: dev
