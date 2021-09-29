@@ -14,3 +14,21 @@ import mysql.connector as mysql
 from sqlalchemy import create_engine, types, text
 import pandas as pd
 import json
+
+mysql_user = 'root'
+mysql_password = 'mypass'
+mysql_host = 'mysql-dbt'
+mysql_db_name = 'tech_stack'
+mysql_port = 3306
+
+postgres_user = 'dbt'
+postgres_password = 'mypass'
+postgres_host = 'postgres-db'
+postgres_db_name = 'tech_stack'
+postgres_port = 5432
+
+def create_mysql_connection():
+
+    connection = f'mysql+pymysql://{mysql_user}:{mysql_password}@{mysql_host}:{mysql_port}/{mysql_db_name}'
+    engine = create_engine(connection)
+    return engine
