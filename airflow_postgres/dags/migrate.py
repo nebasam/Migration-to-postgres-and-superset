@@ -75,3 +75,72 @@ def load_to_postgres(mysql_df, table_name):
     conn_str = f'postgresql+psycopg2://{postgres_user}:{postgres_password}@{postgres_host}:{postgres_port}/{postgres_db_name}'
     engine = create_engine(conn_str)
     mysql_df.to_sql(table_name.lower(), con=engine, index=False, if_exists='append')
+
+default_args = {
+    'owner': '10Academy',
+    'depends_on_past': False,
+    'start_date': datetime(2021, 9, 24),
+    'email': ['neba.samuel17@gmail.com'],
+    'email_on_failure': True,
+    'email_on_retry': True,
+    'retries': 1,
+    'retry_delay': timedelta(minutes=10)
+}
+
+
+
+dag = DAG(
+    'data_migration_to_postgres',
+    default_args=default_args,
+    description='A data migration dag from mysql to python',
+    schedule_interval='@once',
+    # schedule_interval='*/ * * * *'
+)
+
+
+
+create_statation_postgres_task = PostgresOperator(
+    task_id='create_statation_postgres_task',
+    postgres_conn_id='postgres_conn_id',
+    sql='./postgresSql/create_station.sql',
+    dag=dag
+)
+
+
+
+create_station_summary_postgres_task = PostgresOperator(
+    task_id='create_station_summary_postgres_task',
+    postgres_conn_id='postgres_conn_id',
+    sql='./postgresSql/create_station_summary.sql',
+    dag=dag
+)
+
+
+
+
+migrate_station_summary = PythonOperator(
+    task_id=f'migrate_station_summary',
+    python_callable=migrate,
+    op_kwargs={'table_name': 'Station_Summary' },
+    dag=dag
+)
+
+migrate_station_metadata = PythonOperator(
+    task_id=f'migrate_station_metadata',
+    python_callable=migrate,
+    op_kwargs={'table_name': 'I80Stations' },
+    dag=dag
+)
+
+
+    
+
+export_sql_statments = PythonOperator(
+    task_id='export_sql_statments',
+    python_callable=migrate_sql_statemtents,
+    op_kwargs={'src_path':  "/airflow/dags/mysql/", 'tgt_path': "/airflow_postgres/dags/postgres/"},
+    dag=dag
+)
+
+export_sql_statments >> create_statation_postgres_task >> migrate_station_metadata 
+export_sql_statments >> create_station_summary_postgres_task >> migrate_station_summary
