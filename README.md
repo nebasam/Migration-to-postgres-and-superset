@@ -1,6 +1,6 @@
 # Project: Migrate to Postgres and Superset from MYSQL and Redash
 
-![](image/Flow_Diagram.png)
+![](image/Flow_Diagram_Postgres.png)
 
 This project builds a scalable and robust **data warehouse** tech-stack that will help to provide an AI service to a client. The [Data](https://anson.ucdavis.edu/~clarkf/) used for this project is sensor data in csv format. In [Data (ucdavis.edu)](https://anson.ucdavis.edu/~clarkf/) you can find parquet data, and or sensor data in CSV. **ELT pipeline** was developed by migrating an ELT pipeline that was developed using MYSQL, DBT and Airflow for orchestrating the tasks. This was done by changing the the MySQL data warehouse to Postgres and the Redash dashboard to Superset.
 
