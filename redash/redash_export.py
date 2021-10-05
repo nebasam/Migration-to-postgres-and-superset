@@ -12,7 +12,7 @@ Last Updated At: {last_updated_at}
 
 
 
-def save_queries(queries):
+def get_queries(queries):
     for query in queries:
         filename = "query_{}.sql".format(query["id"])
         with open(filename, "w") as f:
@@ -25,3 +25,13 @@ def save_queries(queries):
             )
             f.write(content)
 
+def export_queries():
+    redash_api = 'F23HKin8rRi9nNmuf7m20X2QFqvmv93atp8BKZ9c'
+    redash_url = 'http://localhost:5000'
+
+    redash = Redash(redash_url, redash_api)
+    queries = redash.paginate(redash.queries)
+    save_queries(queries)
+
+if __name__ == "__main__":
+    export_queries()
