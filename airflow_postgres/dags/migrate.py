@@ -16,7 +16,7 @@ import pandas as pd
 import json
 
 import sys
-sys.path.insert(0, "/airflow_postgres/dags/scripts")
+sys.path.insert(0, "/airflow_postgres/dags/src")
 import scripts.mysql_converter as mysql_converter
 
 mysql_user = 'root'
